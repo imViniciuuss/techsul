@@ -37,7 +37,6 @@ export default function NewServices() {
 				...requestData,
 			});
 
-			// Atualize o estado de serviços após a criação bem-sucedida
 			localStorage.setItem('callId', (callId + 1).toString());
 			setService(response.data);
 			alert('Serviço criado!');

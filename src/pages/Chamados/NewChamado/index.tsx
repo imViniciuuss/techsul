@@ -30,6 +30,7 @@ export default function NewChamado() {
 			});
 			alert('Chamado criado!');
 			navigate('/chamados');
+			setCustomerClient(response.data);
 
 			setCustomerClient('');
 		} catch (error) {
